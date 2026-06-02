@@ -30,6 +30,23 @@ fi
 
 echo "==> 1/5 Deploy file statis ke $WEBROOT"
 mkdir -p "$WEBROOT"
+
+# --- (opsional) regenerasi PDF profil dari profile.html via headless Chromium ---
+# Menjaga senopati-company-profile-2026.pdf selalu sinkron dgn profile.html.
+# Tidak pernah menggagalkan deploy: kalau Chromium/Playwright tak ada → pakai PDF lama.
+PDF_OUT="$SRC/senopati-company-profile-2026.pdf"
+PY="${SENOPATI_PY:-/home/senopati/miniconda3/bin/python}"
+if [[ -f "$SRC/profile.html" && -f "$SRC/gen_pdf.py" && -x "$PY" ]]; then
+  echo "    regenerasi PDF dari profile.html ..."
+  if HOME="${SENOPATI_HOME:-/home/senopati}" \
+     PLAYWRIGHT_BROWSERS_PATH="${PLAYWRIGHT_BROWSERS_PATH:-/home/senopati/.cache/ms-playwright}" \
+     "$PY" "$SRC/gen_pdf.py" "$SRC/profile.html" "$PDF_OUT" >/dev/null 2>&1; then
+    echo "    ✓ PDF diregenerasi: $(basename "$PDF_OUT")"
+  else
+    echo "    ⚠ regenerasi PDF dilewati (Chromium/Playwright tak tersedia) — pakai PDF yang ada."
+  fi
+fi
+
 cp "$SRC/index.html"   "$WEBROOT/"
 cp "$SRC/style.css"    "$WEBROOT/" 2>/dev/null || true
 cp "$SRC/main.js"      "$WEBROOT/" 2>/dev/null || true
