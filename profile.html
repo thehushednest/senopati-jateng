@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Senopati Institute — Company Profile 2026</title>
+<link rel="icon" href="assets/img/favicon-192.png">
+<link href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&f[]=switzer@400,500,600,700&f[]=space-mono@400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy-900:#060f1e; --navy-800:#0a1830; --navy-700:#0e2347;
+  --royal:#1c46c9; --blue:#3b7df6; --cyan:#7fd4ff; --peri:#a7b2ef;
+  --paper:#f6f9ff; --ice:#e9f0ff; --white:#fff;
+  --ink:#0c1830; --muted:#5b6b85;
+  --line-d:rgba(255,255,255,.14); --line-l:rgba(12,24,48,.12);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{font-family:'Switzer',system-ui,sans-serif;color:var(--ink);background:#3a3f47;line-height:1.55}
+
+@page{size:A4 portrait;margin:0}
+.page{
+  position:relative;width:210mm;height:297mm;overflow:hidden;
+  page-break-after:always;background:var(--paper);
+}
+.page:last-child{page-break-after:auto}
+@media screen{
+  .page{margin:14px auto;box-shadow:0 14px 50px rgba(0,0,0,.5)}
+}
+
+/* ---------- type ---------- */
+.kicker{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.32em;text-transform:uppercase;color:var(--royal)}
+.kicker.l{color:var(--peri)}
+h1,h2,h3,.num{font-family:'Clash Display',sans-serif;font-weight:600;line-height:1.04;letter-spacing:-.01em}
+p{font-size:14.5px}
+.lead{font-size:16px;color:#26354f}
+.dark p,.dark .lead{color:#cdd9f0}
+
+/* ---------- grounds ---------- */
+.dark{background:radial-gradient(120% 90% at 75% 12%,#1c46c9 0%,#0e2347 38%,#060f1e 100%);color:#eaf1ff}
+.dark::after{content:"";position:absolute;inset:0;background:
+  radial-gradient(40% 30% at 18% 88%,rgba(127,212,255,.18),transparent 70%);pointer-events:none}
+.pad{position:absolute;top:18mm;right:16mm;bottom:18mm;left:16mm}
+.pageno{position:absolute;right:14mm;bottom:10mm;font-family:'Space Mono',monospace;font-size:11px;color:var(--muted)}
+.dark .pageno{color:var(--peri)}
+.brandmark{position:absolute;left:16mm;bottom:10mm;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+.dark .brandmark{color:#7d8cb5}
+
+/* ---------- glass ---------- */
+.glass{background:rgba(255,255,255,.06);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.16);border-radius:18px;box-shadow:0 20px 50px rgba(0,0,0,.35),inset 0 1px 0 rgba(255,255,255,.18)}
+.glass-l{background:rgba(255,255,255,.72);backdrop-filter:blur(10px);border:1px solid #fff;border-radius:18px;box-shadow:0 18px 40px rgba(20,40,90,.10)}
+
+/* ---------- emblem (CSS 3D-glass "S") ---------- */
+.emblem{position:relative;display:grid;place-items:center;border-radius:24px;
+  background:linear-gradient(145deg,rgba(127,212,255,.22),rgba(28,70,201,.30));
+  border:1px solid rgba(127,212,255,.5);
+  box-shadow:0 24px 60px rgba(0,0,0,.45),inset 0 2px 10px rgba(255,255,255,.25),inset 0 -10px 30px rgba(28,70,201,.4)}
+.emblem img{width:62%;filter:drop-shadow(0 6px 14px rgba(0,0,0,.45))}
+.orbit{position:absolute;border:1px solid rgba(167,178,239,.35);border-radius:50%}
+
+/* ---------- number callout ---------- */
+.callout{display:flex;align-items:baseline;gap:10px}
+.callout .num{font-size:54px;background:linear-gradient(180deg,#1c46c9,#3b7df6 60%,#7fd4ff);-webkit-background-clip:text;background-clip:text;color:#1c46c9;-webkit-text-fill-color:transparent}
+.callout .cap{font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+
+/* ---------- photo treatment (full-color, glass frame) ---------- */
+.photo{border-radius:16px;border:1px solid rgba(167,178,239,.4);overflow:hidden;box-shadow:0 18px 40px rgba(20,40,90,.18)}
+.photo img{width:100%;height:100%;object-fit:cover;display:block}
+.photo.dk{box-shadow:0 22px 50px rgba(0,0,0,.45)}
+.photo.dk::after{content:"";position:absolute}
+
+/* ---------- quote band ---------- */
+.quote{font-family:'Clash Display',sans-serif;font-style:italic;font-weight:500;color:var(--peri);font-size:24px;line-height:1.3}
+.quote .who{display:block;font-style:normal;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:#8fa0cf;margin-top:12px}
+
+hr.thin{border:0;border-top:1px solid var(--line-l);margin:14px 0}
+.dark hr.thin{border-top:1px solid var(--line-d)}
+.grid{display:grid;gap:14px}
+ul.clean{list-style:none}
+.tag{display:inline-block;font-family:'Space Mono',monospace;font-size:10px;letter-spacing:.14em;text-transform:uppercase;padding:4px 10px;border-radius:999px;border:1px solid var(--line-l);color:var(--royal)}
+.dark .tag{border-color:var(--line-d);color:var(--cyan)}
+</style>
+</head>
+<body>
+
+<!-- ============ COVER ============ -->
+<section class="page dark">
+  <div class="pad">
+    <div style="display:flex;justify-content:space-between;align-items:flex-start">
+      <div style="display:flex;align-items:center;gap:12px">
+        <div class="emblem" style="width:44px;height:44px;border-radius:12px"><img src="assets/img/logo.png" alt=""></div>
+        <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--peri)">Senopati<br>Institute</div>
+      </div>
+      <div style="text-align:right;font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.2em;color:var(--peri)">JAKARTA<br>INDONESIA</div>
+    </div>
+
+    <div style="position:absolute;left:0;top:42%;transform:translateY(-50%)">
+      <div class="kicker l" style="margin-bottom:18px">Company Profile · 2026</div>
+      <h1 style="font-size:74px;background:linear-gradient(180deg,#fff,#c9d8ff);-webkit-background-clip:text;background-clip:text;color:#eef3ff;-webkit-text-fill-color:transparent">Where Ideas<br>Become Strategy</h1>
+      <p style="margin-top:22px;max-width:430px;font-size:16px;color:#bcccee">Yayasan Senopati Strategic Research — lembaga riset strategis, pengembangan organisasi, dan penguatan kapasitas sumber daya manusia.</p>
+    </div>
+
+    <!-- emblem big -->
+    <div class="emblem" style="position:absolute;right:0;top:48%;width:150px;height:182px">
+      <img src="assets/img/logo.png" alt="Senopati emblem">
+      <div class="orbit" style="width:250px;height:250px"></div>
+      <div class="orbit" style="width:330px;height:330px;border-style:dashed"></div>
+    </div>
+
+    <div style="position:absolute;left:0;bottom:0;width:100%;display:flex;justify-content:space-between;align-items:flex-end">
+      <div>
+        <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.3em;color:#8fa0cf">SENOPATI STRATEGIC RESEARCH</div>
+        <div style="height:2px;width:120px;margin-top:10px;background:linear-gradient(90deg,var(--cyan),transparent)"></div>
+      </div>
+      <div style="font-family:'Space Mono',monospace;font-size:11px;color:#8fa0cf">www.senopatistrategic.com</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 1 · TENTANG ============ -->
+<section class="page">
+  <div class="pad">
+    <div class="kicker">01 — Tentang Yayasan</div>
+    <h2 style="font-size:46px;margin-top:10px">Senopati Strategic<br>Research</h2>
+    <hr class="thin" style="margin-top:18px">
+    <div style="display:grid;grid-template-columns:1.3fr .9fr;gap:26px;margin-top:8px">
+      <div>
+        <p class="lead">Yayasan Senopati Strategic Research, atau <b>Senopati Institute</b>, adalah lembaga berbadan hukum yang berfokus pada riset strategis, pengembangan organisasi, pendidikan, dan penguatan sumber daya manusia.</p>
+        <p style="margin-top:14px">Kami hadir sebagai ruang yang mempertemukan pengetahuan, analisis, pengalaman lapangan, dan kerja kolaboratif untuk menjawab kebutuhan kebijakan publik serta pengembangan kelembagaan di Indonesia.</p>
+        <p style="margin-top:14px">Berkedudukan di Jakarta, Senopati Institute memperoleh pengesahan badan hukum dari Kementerian Hukum Republik Indonesia pada <b>24 September 2025</b>. Sejak awal, yayasan ini dibangun dengan orientasi yang jelas — menghadirkan kerja-kerja yang relevan, terukur, dan memberi manfaat bagi institusi maupun masyarakat.</p>
+        <p style="margin-top:14px">Bagi kami, pengetahuan bukan berhenti pada gagasan. Pengetahuan harus diolah menjadi strategi, diterjemahkan menjadi tindakan, dan diarahkan untuk menghasilkan perubahan yang nyata.</p>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div class="glass-l" style="padding:20px">
+          <div class="callout"><span class="num">2025</span></div>
+          <div class="cap" style="font-family:'Space Mono',monospace;font-size:11px;color:var(--muted);letter-spacing:.1em;text-transform:uppercase">Tahun Pendirian</div>
+          <hr class="thin">
+          <div style="font-size:13px;color:var(--muted)">Berbadan hukum · disahkan Kementerian Hukum RI · berkedudukan di Jakarta.</div>
+        </div>
+        <div class="glass-l" style="padding:20px;background:linear-gradient(160deg,#eaf0ff,#f6f9ff)">
+          <div class="quote" style="font-size:20px;color:var(--royal)">"Knowledge itself is power."<span class="who" style="color:var(--muted)">Francis Bacon</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="brandmark">Senopati Institute</div>
+  <div class="pageno">01</div>
+</section>
+
+<!-- ============ 2 · LATAR BELAKANG ============ -->
+<section class="page dark">
+  <div class="pad">
+    <div class="kicker l">02 — Latar Belakang</div>
+    <h2 style="font-size:44px;margin-top:10px;color:#fff">Dari Kebutuhan,<br>Lahir Sebuah Mitra</h2>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px;align-items:start">
+      <div>
+        <p>Perubahan sosial, ekonomi, teknologi, dan tata kelola berlangsung semakin cepat. Di tengah dinamika itu, banyak institusi menghadapi kebutuhan yang sama: memahami persoalan secara utuh, mengambil keputusan berbasis evidensi, dan memastikan kebijakan maupun program dapat dijalankan secara efektif.</p>
+        <p style="margin-top:14px">Kebutuhan tersebut tidak cukup dijawab oleh gagasan yang baik semata. Diperlukan mitra yang mampu menghubungkan analisis dengan implementasi, serta mengubah pengetahuan menjadi langkah yang terarah dan dapat diterapkan.</p>
+      </div>
+      <div>
+        <p>Senopati Institute lahir dari kebutuhan itu. Kami hadir untuk mendukung perumusan kebijakan, penguatan organisasi, pengembangan kapasitas SDM, edukasi sosial, pengentasan kemiskinan, dan pemberdayaan masyarakat.</p>
+        <p style="margin-top:14px">Karena itu, peran kami tidak berhenti pada penyusunan kajian. Kami juga berkomitmen mendampingi proses perubahan, memperkuat kolaborasi, dan membantu mitra menghasilkan dampak yang lebih nyata dan berkelanjutan.</p>
+      </div>
+    </div>
+    <div class="photo dk" style="position:absolute;left:16mm;right:16mm;bottom:18mm;height:78mm;border-radius:16px">
+      <img src="assets/photos/ai-training.jpg" alt="Kegiatan pelatihan Senopati Institute">
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(6,15,30,.78))"></div>
+      <div style="position:absolute;left:18px;bottom:14px"><span class="tag">Dokumentasi · AI Readiness · Jawa Tengah</span></div>
+    </div>
+  </div>
+  <div class="brandmark">Senopati Institute</div>
+  <div class="pageno">02</div>
+</section>
+
+<!-- ============ 3 · VISI & MISI ============ -->
+<section class="page dark">
+  <div class="pad">
+    <div class="kicker l">03 — Visi &amp; Misi</div>
+    <div style="display:grid;grid-template-columns:.8fr 1.2fr;gap:24px;margin-top:24px">
+      <div class="glass" style="padding:26px;align-self:start">
+        <div class="kicker l">Visi</div>
+        <p style="margin-top:14px;font-size:18px;color:#eef3ff;line-height:1.5">Menjadi yayasan strategis yang <b>kredibel</b> dalam pengembangan kebijakan publik, transformasi organisasi, riset terapan, dan penguatan kapasitas masyarakat.</p>
+        <div class="emblem" style="width:64px;height:64px;border-radius:16px;margin-top:24px"><img src="assets/img/logo.png" alt=""></div>
+      </div>
+      <div>
+        <div class="kicker l" style="margin-bottom:14px">Misi</div>
+        <div class="grid" style="grid-template-columns:1fr 1fr">
+          <div class="glass" style="padding:16px 18px"><b style="color:var(--cyan)">01</b><p style="margin-top:6px">Menjadi mitra strategis pemerintah, masyarakat sipil, dan organisasi dalam penguatan kelembagaan serta perumusan kebijakan berbasis pengetahuan.</p></div>
+          <div class="glass" style="padding:16px 18px"><b style="color:var(--cyan)">02</b><p style="margin-top:6px">Melakukan penelitian dan kajian strategis pada isu ekonomi, sosial, budaya, keamanan, dan tata kelola pemerintahan sebagai dasar pengambilan keputusan yang lebih tepat.</p></div>
+          <div class="glass" style="padding:16px 18px"><b style="color:var(--cyan)">03</b><p style="margin-top:6px">Mengembangkan pendidikan, pelatihan, dan penguatan SDM bagi individu maupun institusi agar lebih adaptif terhadap perubahan.</p></div>
+          <div class="glass" style="padding:16px 18px"><b style="color:var(--cyan)">04</b><p style="margin-top:6px">Mendorong pemanfaatan ilmu pengetahuan dan teknologi terapan untuk menjawab persoalan kebijakan, kesejahteraan sosial, dan pelayanan publik.</p></div>
+          <div class="glass" style="padding:16px 18px;grid-column:1/3"><b style="color:var(--cyan)">05</b><p style="margin-top:6px">Membangun kolaborasi multipihak yang sehat, produktif, dan berdampak nyata bagi masyarakat.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="brandmark">Senopati Institute</div>
+  <div class="pageno">03</div>
+</section>
+
+<!-- ============ 4 · NILAI DASAR ============ -->
+<section class="page dark">
+  <div class="pad">
+    <div class="kicker l">04 — Nilai Dasar</div>
+    <h2 style="font-size:44px;margin-top:10px;color:#fff">Lima Prinsip, Satu Posisi</h2>
+    <div class="grid" style="grid-template-columns:1fr 1fr 1fr;margin-top:24px">
+      <div class="glass" style="padding:20px"><div class="num" style="font-size:30px;color:var(--cyan)">01</div><h3 style="font-size:20px;margin-top:8px;color:#fff">Integritas</h3><p style="margin-top:6px">Bekerja secara objektif, jujur, dan dapat dipertanggungjawabkan.</p></div>
+      <div class="glass" style="padding:20px"><div class="num" style="font-size:30px;color:var(--cyan)">02</div><h3 style="font-size:20px;margin-top:8px;color:#fff">Keilmuan</h3><p style="margin-top:6px">Bertumpu pada data, riset, dan analisis.</p></div>
+      <div class="glass" style="padding:20px"><div class="num" style="font-size:30px;color:var(--cyan)">03</div><h3 style="font-size:20px;margin-top:8px;color:#fff">Profesionalisme</h3><p style="margin-top:6px">Proses kerja yang terencana, terukur, dan berorientasi pada mutu.</p></div>
+      <div class="glass" style="padding:20px"><div class="num" style="font-size:30px;color:var(--cyan)">04</div><h3 style="font-size:20px;margin-top:8px;color:#fff">Kolaborasi</h3><p style="margin-top:6px">Kerja sama yang terbuka, sehat, dan saling menguatkan.</p></div>
+      <div class="glass" style="padding:20px"><div class="num" style="font-size:30px;color:var(--cyan)">05</div><h3 style="font-size:20px;margin-top:8px;color:#fff">Kebermanfaatan</h3><p style="margin-top:6px">Memberi nilai nyata bagi masyarakat dan mitra.</p></div>
+      <div class="glass" style="padding:20px;background:linear-gradient(160deg,rgba(28,70,201,.28),rgba(127,212,255,.12))"><div class="kicker l">Positioning</div><p style="margin-top:8px;font-size:13px">Yayasan riset strategis dan pengembangan kapasitas yang menjembatani pengetahuan, kebijakan, dan implementasi — mitra kajian, transformasi organisasi, pelatihan, dan pemberdayaan sosial lintas sektor.</p></div>
+    </div>
+  </div>
+  <div class="brandmark">Senopati Institute</div>
+  <div class="pageno">04</div>
+</section>
+
+<!-- ============ 5 · LEGALITAS ============ -->
+<section class="page">
+  <div class="pad">
+    <div class="kicker">05 — Legalitas &amp; Identitas</div>
+    <h2 style="font-size:42px;margin-top:10px">Fondasi yang Sah<br>dan Tertata</h2>
+    <p class="lead" style="margin-top:14px;max-width:560px">Senopati Institute dibangun di atas fondasi kelembagaan yang jelas, sah secara hukum, dan tertata secara administratif — dasar bagi komitmen kami untuk bekerja profesional, akuntabel, dan terpercaya.</p>
+    <div class="grid" style="grid-template-columns:1fr 1fr;margin-top:22px">
+      <div class="glass-l" style="padding:16px 18px"><div class="kicker">01 · Nama Lembaga</div><div style="font-weight:600;margin-top:6px">Yayasan Senopati Strategic Research</div></div>
+      <div class="glass-l" style="padding:16px 18px"><div class="kicker">02 · Brand</div><div style="font-weight:600;margin-top:6px">Senopati Institute</div></div>
+      <div class="glass-l" style="padding:16px 18px"><div class="kicker">03 · Bentuk Hukum</div><div style="font-weight:600;margin-top:6px">Badan Hukum Yayasan</div></div>
+      <div class="glass-l" style="padding:16px 18px"><div class="kicker">04 · Dasar Pendirian</div><div style="font-weight:600;margin-top:6px">Akta Notaris No. 54 — 23 September 2025</div></div>
+      <div class="glass-l" style="padding:16px 18px;grid-column:1/3"><div class="kicker">05 · Pengesahan</div><div style="font-weight:600;margin-top:6px">Kepmenkumham RI No. AHU-0022510.AH.01.04.Tahun 2025 — 24 September 2025</div></div>
+      <div class="glass-l" style="padding:16px 18px"><div class="kicker">06 · NPWP</div><div style="font-weight:600;margin-top:6px">10.000.000.5-838.444 · terdaftar 29 Sept 2025</div></div>
+      <div class="glass-l" style="padding:16px 18px"><div class="kicker">08 · Email</div><div style="font-weight:600;margin-top:6px">admin@senopatistrategic.com</div></div>
+      <div class="glass-l" style="padding:16px 18px;grid-column:1/3"><div class="kicker">07 · Alamat</div><div style="font-weight:600;margin-top:6px">Infiniti Office, Gedung BEI Tower 1 Level 3, Unit 304, Senayan, Kebayoran Baru, Jakarta Selatan, DKI Jakarta</div></div>
+    </div>
+  </div>
+  <div class="brandmark">Senopati Institute</div>
+  <div class="pageno">05</div>
+</section>
+
+<!-- ============ 6 · BIDANG KEGIATAN ============ -->
+<section class="page">
+  <div class="pad">
+    <div class="kicker">06 — Bidang Kegiatan</div>
+    <h2 style="font-size:42px;margin-top:10px">Empat Poros Utama</h2>
+    <p class="lead" style="margin-top:14px;max-width:600px">Sesuai ruang lingkup akta pendirian, bidang kegiatan kami dirumuskan ke dalam empat poros utama agar lebih fokus, relevan, dan mudah diterjemahkan ke dalam program kerja.</p>
+    <div class="grid" style="grid-template-columns:1fr 1fr;margin-top:24px">
+      <div class="glass-l" style="padding:24px;position:relative"><div class="kicker">Strategic Research</div><h3 style="font-size:24px;margin-top:8px;color:var(--royal)">Riset &amp; Kajian</h3><p style="margin-top:8px">Riset, kajian, policy paper, dan analisis isu strategis.</p></div>
+      <div class="glass-l" style="padding:24px"><div class="kicker">Institutional Development</div><h3 style="font-size:24px;margin-top:8px;color:var(--royal)">Tata Kelola</h3><p style="margin-top:8px">Pendampingan kelembagaan, evaluasi, dan perbaikan tata kelola.</p></div>
+      <div class="glass-l" style="padding:24px"><div class="kicker">Capacity Building</div><h3 style="font-size:24px;margin-top:8px;color:var(--royal)">Penguatan Kapasitas</h3><p style="margin-top:8px">Pelatihan, workshop, mentoring, dan penguatan kompetensi.</p></div>
+      <div class="glass-l" style="padding:24px"><div class="kicker">Collaborative Engagement</div><h3 style="font-size:24px;margin-top:8px;color:var(--royal)">Kemitraan</h3><p style="margin-top:8px">Forum diskusi, dialog strategis, dan kemitraan lintas sektor.</p></div>
+    </div>
+  </div>
+  <div class="brandmark">Senopati Institute</div>
+  <div class="pageno">06</div>
+</section>
+
+<!-- ============ 7 · LAYANAN UTAMA ============ -->
+<section class="page">
+  <div class="pad">
+    <div class="kicker">07 — Layanan Utama</div>
+    <h2 style="font-size:40px;margin-top:10px">Enam Layanan Inti</h2>
+    <p class="lead" style="margin-top:12px;max-width:600px">Layanan Senopati Institute didesain untuk membantu mitra memahami persoalan secara lebih jernih, menyusun langkah yang tepat, dan menguatkan kapasitas pelaksanaan di lapangan.</p>
+    <div class="grid" style="grid-template-columns:1fr 1fr 1fr;margin-top:20px">
+      <div class="glass-l" style="padding:18px"><h3 style="font-size:17px;color:var(--royal)">Konsultasi Kebijakan &amp; Organisasi</h3><p style="margin-top:6px;font-size:13px">Saran dan rekomendasi strategis untuk perumusan, penyesuaian, dan penguatan kebijakan maupun desain kelembagaan.</p></div>
+      <div class="glass-l" style="padding:18px"><h3 style="font-size:17px;color:var(--royal)">Pendampingan Implementasi</h3><p style="margin-top:6px;font-size:13px">Mendampingi pelaksanaan program dan kebijakan agar lebih efektif, adaptif, dan sesuai kebutuhan di pusat maupun daerah.</p></div>
+      <div class="glass-l" style="padding:18px"><h3 style="font-size:17px;color:var(--royal)">Riset &amp; Kajian Strategis</h3><p style="margin-top:6px;font-size:13px">Penelitian, studi kebijakan, policy brief, dan analisis tematik untuk mendukung pengambilan keputusan yang lebih kuat.</p></div>
+      <div class="glass-l" style="padding:18px"><h3 style="font-size:17px;color:var(--royal)">Analisis Dampak</h3><p style="margin-top:6px;font-size:13px">Membantu mitra menilai dampak sosial, ekonomi, keamanan, dan kelembagaan dari suatu kebijakan atau program.</p></div>
+      <div class="glass-l" style="padding:18px"><h3 style="font-size:17px;color:var(--royal)">Evaluasi Program &amp; Kinerja</h3><p style="margin-top:6px;font-size:13px">Evaluasi efektivitas program, capaian kebijakan, dan performa organisasi sebagai dasar perbaikan yang terukur.</p></div>
+      <div class="glass-l" style="padding:18px"><h3 style="font-size:17px;color:var(--royal)">Pendidikan &amp; Pelatihan</h3><p style="margin-top:6px;font-size:13px">Workshop, seminar, konferensi, mentoring, dan program penguatan kapasitas profesional bagi beragam kalangan.</p></div>
+    </div>
+    <div class="glass-l" style="padding:18px 22px;margin-top:18px;background:linear-gradient(160deg,#eef3ff,#f6f9ff)">
+      <div class="quote" style="font-size:20px;color:var(--royal)">"The future belongs to those who prepare for it today."<span class="who" style="color:var(--muted)">Malcolm X</span></div>
+    </div>
+  </div>
+  <div class="brandmark">Senopati Institute</div>
+  <div class="pageno">07</div>
+</section>
+
+<!-- ============ 8 · STRUKTUR ============ -->
+<section class="page">
+  <div class="pad">
+    <div class="kicker">08 — Struktur Organisasi</div>
+    <h2 style="font-size:40px;margin-top:10px">Jejaring Multidisiplin</h2>
+    <p class="lead" style="margin-top:12px;max-width:600px">Senopati Institute didukung struktur kelembagaan yang tertata dan jejaring profesional dengan kompetensi multidisiplin — memungkinkan kami bekerja secara strategis, kolaboratif, dan relevan.</p>
+    <div class="grid" style="grid-template-columns:1fr 1fr;margin-top:18px">
+      <div class="glass-l" style="padding:16px 18px"><div class="kicker">Pendiri</div><div style="margin-top:4px;font-weight:600">Ribut Hari Wibowo</div></div>
+      <div class="glass-l" style="padding:16px 18px"><div class="kicker">Pembina</div><div style="margin-top:4px;font-weight:600">Condro Kirono</div></div>
+      <div class="glass-l" style="padding:16px 18px;grid-column:1/3"><div class="kicker">Pengurus</div>
+        <div style="margin-top:6px;font-size:13.5px;line-height:1.7">
+          <b>Nugroho Ari Setyawan,</b> S.I.K., M.M., M.Sc. — <span style="color:var(--muted)">Ketua</span><br>
+          <b>Taufiq Syahrial,</b> S.H., M.Sc., Ph.D. — <span style="color:var(--muted)">Sekretaris</span><br>
+          <b>Adhytiawarman Gautama Putra,</b> S.H., S.I.K., M.H., Ph.D. — <span style="color:var(--muted)">Bendahara 1</span><br>
+          <b>Bintang Cahya Sakti,</b> S.Tr.K., S.I.K., M.A. — <span style="color:var(--muted)">Bendahara 2</span>
+        </div>
+      </div>
+      <div class="glass-l" style="padding:16px 18px;grid-column:1/3"><div class="kicker">Pengawas</div>
+        <div style="margin-top:6px;font-size:13.5px;line-height:1.7">
+          <b>Dr. Ahrie Sonta Nasution,</b> S.I.K., M.Si. — <span style="color:var(--muted)">Ketua Pengawas</span><br>
+          <b>Wahyu Nugroho Setyawan,</b> S.I.K., M.PICT., M.Krim. — <span style="color:var(--muted)">Anggota</span>
+        </div>
+      </div>
+      <div class="glass-l" style="padding:16px 18px;grid-column:1/3"><div class="kicker">Tim Ahli</div>
+        <div style="margin-top:6px;font-size:12.5px;line-height:1.65;columns:2;column-gap:22px;color:#26354f">
+          ▪ Dr. Bhakti Suhendarwan, S.I.K., M.T.C.P.<br>
+          ▪ Niswatil Mouna, M.A., Ph.D.<br>
+          ▪ Aristito Febrianto, S.E., M.Sc., Ph.D.<br>
+          ▪ Rizal Hari Magnadi, S.E., M.M.<br>
+          ▪ Dani Andreas Butar Butar, S.Tr.K., S.I.K., M.A.<br>
+          ▪ Panji Yugo Putranto, S.Tr.K., S.I.K., M.P.A.<br>
+          ▪ Ardian Dirgantara, S.Tr.K., S.I.K., M.H., M.Sc.<br>
+          ▪ Muhammad Imam Farid, S.Tr.K., M.Sc.<br>
+          ▪ Bagas Panglima, S.Tr.K., M.Sc., CBA., CPHR.<br>
+          ▪ Joshua Octavianus Mualim, S.Tr.K., M.Sc., M.Si.
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="brandmark">Senopati Institute</div>
+  <div class="pageno">08</div>
+</section>
+
+<!-- ============ 9 · KEMITRAAN ============ -->
+<section class="page dark">
+  <div class="pad">
+    <div class="kicker l">09 — Kemitraan &amp; Pendanaan</div>
+    <h2 style="font-size:42px;margin-top:10px;color:#fff">Ruang Bertemunya<br>Kapasitas &amp; Kepercayaan</h2>
+    <div style="display:grid;grid-template-columns:1.2fr .8fr;gap:24px;margin-top:22px">
+      <div>
+        <p>Senopati Institute terbuka membangun kerja sama dengan kementerian dan lembaga pemerintah, pemerintah daerah, perguruan tinggi, lembaga penelitian, organisasi masyarakat sipil, komunitas profesi, dunia usaha, serta mitra nasional maupun internasional.</p>
+        <p style="margin-top:14px">Ruang kolaborasi kami mencakup penelitian, kajian kebijakan, pelatihan, seminar, pendampingan, pengembangan SDM, serta berbagai inisiatif kolaboratif yang dirancang sesuai kebutuhan mitra.</p>
+        <p style="margin-top:14px">Bagi kami, kemitraan bukan sekadar hubungan kerja sama, melainkan ruang untuk mempertemukan kapasitas, kepercayaan, dan tujuan bersama demi menghasilkan dampak yang lebih luas.</p>
+      </div>
+      <div class="glass" style="padding:22px;align-self:start">
+        <div class="kicker l">Sumber Pendanaan</div>
+        <ul class="clean" style="margin-top:12px;font-size:13.5px;line-height:2.1">
+          <li>› Hibah pemerintah</li>
+          <li>› CSR perusahaan mitra</li>
+          <li>› Lembaga donor</li>
+          <li>› Jasa konsultasi &amp; pendampingan</li>
+          <li>› Donasi &amp; filantropi</li>
+        </ul>
+      </div>
+    </div>
+    <div class="glass" style="padding:20px 24px;position:absolute;left:16mm;right:16mm;bottom:20mm;background:linear-gradient(160deg,rgba(28,70,201,.3),rgba(6,15,30,.4))">
+      <div class="quote" style="font-size:22px">"If I have seen further it is by standing on the shoulders of Giants."<span class="who">Isaac Newton</span></div>
+    </div>
+  </div>
+  <div class="brandmark">Senopati Institute</div>
+  <div class="pageno">09</div>
+</section>
+
+<!-- ============ 10 · REKAM JEJAK 1-2 ============ -->
+<section class="page">
+  <div class="pad">
+    <div class="kicker">10 — Rekam Jejak &amp; Capaian</div>
+    <h2 style="font-size:34px;margin-top:8px">Terukur dalam Pelaksanaan,<br>Terlihat dalam Dampak</h2>
+    <hr class="thin" style="margin:14px 0">
+    <!-- Portfolio 1 -->
+    <div style="display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:center">
+      <div>
+        <span class="tag">01 · Strategic Research &amp; Edukasi</span>
+        <h3 style="font-size:22px;margin-top:8px">Pelatihan AI Readiness Pelajar SMA di Jawa Tengah <span style="color:var(--muted)">(2026)</span></h3>
+        <p style="margin-top:8px;font-size:13.5px">Program kolaboratif bersama ASEAN Foundation dan Polda Jawa Tengah untuk memperkuat literasi AI pelajar dan masyarakat. Mencakup <i>campaign awareness</i>, <i>in-depth training</i>, dan <i>Training of Trainers</i>. <b>Peran Senopati:</b> pelaksana edukasi &amp; pendamping peserta.</p>
+        <div class="callout" style="margin-top:10px"><span class="num">142.288</span><span class="cap">penerima manfaat</span></div>
+      </div>
+      <div class="photo" style="height:62mm"><img src="assets/photos/ai-training.jpg" alt="Pelatihan AI Readiness"></div>
+    </div>
+    <hr class="thin" style="margin:18px 0">
+    <!-- Portfolio 2 -->
+    <div style="display:grid;grid-template-columns:.9fr 1.1fr;gap:20px;align-items:center">
+      <div class="glass-l" style="height:60mm;display:grid;place-items:center;padding:20px;background:linear-gradient(160deg,#eef3ff,#f6f9ff)">
+        <div style="text-align:center">
+          <div class="callout" style="justify-content:center"><span class="num">1.155</span></div>
+          <div class="cap" style="font-family:'Space Mono',monospace;font-size:11px;color:var(--muted);letter-spacing:.1em">RESPONDEN</div>
+          <hr class="thin" style="margin:14px auto;width:60%">
+          <div class="callout" style="justify-content:center"><span class="num">12</span></div>
+          <div class="cap" style="font-family:'Space Mono',monospace;font-size:11px;color:var(--muted);letter-spacing:.1em">KABUPATEN/KOTA</div>
+        </div>
+      </div>
+      <div>
+        <span class="tag">02 · Riset &amp; Evaluasi</span>
+        <h3 style="font-size:22px;margin-top:8px">Riset Kepuasan Masyarakat — Program Ketahanan Pangan Polri <span style="color:var(--muted)">(2025)</span></h3>
+        <p style="margin-top:8px;font-size:13.5px">Telaah pelaksanaan program ketahanan pangan berbasis jagung di Jawa Tengah dengan pendekatan <i>Citizen Satisfaction Model</i> (CSM) — metode campuran (wawancara multipihak + survei). Hasil: respons publik umumnya positif terhadap kualitas layanan, manfaat, dan kepercayaan, dengan rekomendasi penguatan koordinasi &amp; kapasitas teknis. <b>Peran Senopati:</b> pelaksana riset &amp; evaluasi.</p>
+      </div>
+    </div>
+  </div>
+  <div class="brandmark">Senopati Institute</div>
+  <div class="pageno">10</div>
+</section>
+
+<!-- ============ 11 · REKAM JEJAK 3-4 ============ -->
+<section class="page">
+  <div class="pad">
+    <div class="kicker">11 — Rekam Jejak &amp; Capaian</div>
+    <hr class="thin" style="margin:14px 0">
+    <!-- Portfolio 3 -->
+    <div style="display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:center">
+      <div>
+        <span class="tag">03 · Collaborative Engagement</span>
+        <h3 style="font-size:22px;margin-top:8px">Strategi Preventif Rangkul Gen Z Lewat E-Sports</h3>
+        <p style="margin-top:8px;font-size:13.5px">Turnamen e-sports berjenjang (Mobile Legends, PUBG Mobile) dari tingkat Polsek hingga puncak Kapolda Cup — merangkul ribuan pelajar. Mengalihkan energi digital remaja ke prestasi sekaligus edukasi kamtibmas: melawan judi online, tawuran, dan kenakalan remaja. <b>Peran Senopati:</b> penyelenggara (EO) &amp; perancang program.</p>
+        <div class="callout" style="margin-top:10px"><span class="num">Ribuan</span><span class="cap">peserta · Polsek → Polda</span></div>
+      </div>
+      <div class="photo" style="height:62mm"><img src="assets/photos/esports-champions.jpg" alt="Turnamen e-sports Kapolresta"></div>
+    </div>
+    <hr class="thin" style="margin:18px 0">
+    <!-- Portfolio 4 -->
+    <div style="display:grid;grid-template-columns:.9fr 1.1fr;gap:20px;align-items:center">
+      <div class="glass-l" style="height:60mm;display:grid;place-items:center;padding:24px;background:linear-gradient(160deg,#0e2347,#060f1e);color:#eaf1ff;position:relative;overflow:hidden">
+        <div class="emblem" style="position:absolute;right:-20px;top:-20px;width:90px;height:110px;opacity:.5"><img src="assets/img/logo.png" alt=""></div>
+        <div style="text-align:center;position:relative">
+          <div class="kicker l">TOSS TBC</div>
+          <div style="font-family:'Clash Display';font-size:20px;margin-top:10px;color:#fff;line-height:1.4">Temukan · Obati<br>Sampai Sembuh</div>
+          <hr class="thin" style="margin:14px auto;width:60%">
+          <div style="font-size:12px;color:var(--peri)">Target Eliminasi TBC<br>Nasional 2030</div>
+        </div>
+      </div>
+      <div>
+        <span class="tag">04 · Program Strategis Kesehatan</span>
+        <h3 style="font-size:22px;margin-top:8px">Sinergi Peduli Berantas TB Paru</h3>
+        <p style="margin-top:8px;font-size:13.5px">Gerakan "Polda Jateng Peduli Berantas TB Paru" mendukung target Eliminasi TBC Nasional 2030. Diinisiasi Kapolda Jateng; memberdayakan ribuan Bhabinkamtibmas sebagai <i>tracer</i> lapangan berbekal buku saku — deteksi dini, jemput pasien, kawal kepatuhan obat — bersinergi dengan Dinas Kesehatan. <b>Peran Senopati:</b> perancang program, penyusun pedoman, pendamping pelaksanaan.</p>
+      </div>
+    </div>
+  </div>
+  <div class="brandmark">Senopati Institute</div>
+  <div class="pageno">11</div>
+</section>
+
+<!-- ============ 12 · REKAM JEJAK 5-6 ============ -->
+<section class="page">
+  <div class="pad">
+    <div class="kicker">12 — Rekam Jejak &amp; Capaian</div>
+    <hr class="thin" style="margin:14px 0">
+    <!-- Portfolio 5 -->
+    <div style="display:grid;grid-template-columns:1.1fr .9fr;gap:20px;align-items:center">
+      <div>
+        <span class="tag">05 · Inovasi Pelayanan Publik</span>
+        <h3 style="font-size:22px;margin-top:8px">Respons Cepat: Safe House 110 Lindungi Warga</h3>
+        <p style="margin-top:8px;font-size:13.5px">Safe House 110 sebagai pusat perlindungan darurat berbasis komunitas, terintegrasi langsung dengan Call Center Polisi 110. Menjadi rumah singgah taktis Bhabinkamtibmas dan tempat aman korban sebelum evakuasi — mempercepat waktu penanganan dan menumbuhkan rasa aman di lingkungan warga. <b>Peran Senopati:</b> perancang konsep &amp; pengembang program.</p>
+        <div class="callout" style="margin-top:10px"><span class="num">110</span><span class="cap">terintegrasi call center polisi</span></div>
+      </div>
+      <div class="glass-l" style="height:62mm;display:grid;place-items:center;padding:24px;background:linear-gradient(160deg,#1c46c9,#0e2347);position:relative;overflow:hidden">
+        <div class="orbit" style="width:200px;height:200px;border-color:rgba(127,212,255,.3)"></div>
+        <div style="text-align:center;color:#fff;position:relative">
+          <div style="font-family:'Clash Display';font-size:46px;color:var(--cyan)">110</div>
+          <div class="kicker l" style="margin-top:6px">Tiga menit dari pintu</div>
+        </div>
+      </div>
+    </div>
+    <hr class="thin" style="margin:18px 0">
+    <!-- Portfolio 6 -->
+    <div style="display:grid;grid-template-columns:.9fr 1.1fr;gap:20px;align-items:center">
+      <div class="photo" style="height:60mm"><img src="assets/photos/esports-stage.jpg" alt="Kegiatan pemberdayaan"></div>
+      <div>
+        <span class="tag">06 · Pemberdayaan Perempuan</span>
+        <h3 style="font-size:22px;margin-top:8px">Emansipasi Nyata: Gerakan Kartini Berdaya</h3>
+        <p style="margin-top:8px;font-size:13.5px">Program "Sekolah Kartini Berdaya" bersama Polda Jateng dan Himpunan Mahasiswa Islam (HMI) untuk memperkuat emansipasi dan peran perempuan di ranah publik &amp; keluarga. Dipimpin perwira Polwan; menekankan peran ibu dalam pembentukan karakter anak dan pencegahan kenakalan remaja. <b>Peran Senopati:</b> penggagas &amp; fasilitator program.</p>
+      </div>
+    </div>
+  </div>
+  <div class="brandmark">Senopati Institute</div>
+  <div class="pageno">12</div>
+</section>
+
+<!-- ============ 13 · PENUTUP ============ -->
+<section class="page dark">
+  <div class="pad">
+    <div class="kicker l">13 — Penutup</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:24px">
+      <div>
+        <p>Yayasan Senopati Strategic Research dibangun di atas fondasi hukum yang jelas, arah kelembagaan yang terukur, dan orientasi kerja yang relevan dengan tantangan kebijakan publik serta pengembangan organisasi saat ini.</p>
+        <p style="margin-top:14px">Dengan legalitas formal, kapasitas riset, jejaring ahli, dan komitmen pada penguatan institusi serta masyarakat, Senopati Institute terus berkembang sebagai mitra strategis yang kredibel, adaptif, dan berdampak.</p>
+      </div>
+      <div>
+        <p>Ke depan, kami percaya bahwa tantangan pembangunan, tata kelola, dan transformasi sosial membutuhkan lebih dari sekadar niat baik. Diperlukan pengetahuan yang kuat, strategi yang tepat, dan kolaborasi yang dijalankan dengan kesungguhan.</p>
+        <p style="margin-top:14px">Di titik itulah Senopati Institute menempatkan perannya: <b style="color:var(--cyan)">membantu mitra mengubah gagasan menjadi arah, arah menjadi kerja, dan kerja menjadi dampak.</b></p>
+      </div>
+    </div>
+    <div style="position:absolute;left:16mm;right:16mm;bottom:20mm">
+      <div class="quote" style="font-size:28px">"However beautiful the strategy, you should occasionally look at the results."<span class="who">Winston S. Churchill</span></div>
+    </div>
+  </div>
+  <div class="brandmark">Senopati Institute</div>
+  <div class="pageno">13</div>
+</section>
+
+<!-- ============ BACK COVER ============ -->
+<section class="page dark">
+  <div class="pad" style="display:flex;flex-direction:column;justify-content:space-between">
+    <div style="display:flex;align-items:center;gap:14px">
+      <div class="emblem" style="width:52px;height:52px;border-radius:14px"><img src="assets/img/logo.png" alt=""></div>
+      <div style="font-family:'Space Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--peri)">Senopati Strategic Research</div>
+    </div>
+
+    <div style="text-align:center">
+      <h2 style="font-size:50px;background:linear-gradient(180deg,#fff,#c9d8ff);-webkit-background-clip:text;background-clip:text;color:#eef3ff;-webkit-text-fill-color:transparent;line-height:1.1">Where Ideas<br>Become Strategy</h2>
+      <div class="emblem" style="width:96px;height:116px;margin:28px auto 0;opacity:.95"><img src="assets/img/logo.png" alt="">
+        <div class="orbit" style="width:180px;height:180px;border-style:dashed"></div>
+      </div>
+    </div>
+
+    <div>
+      <hr class="thin">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:16px;font-size:13px">
+        <div>
+          <div class="kicker l">Alamat</div>
+          <p style="margin-top:6px;color:#cdd9f0">Infiniti Office, Gedung BEI Tower 1 Level 3, Unit 304, Senayan, Kebayoran Baru, Jakarta Selatan, DKI Jakarta.</p>
+        </div>
+        <div style="text-align:right">
+          <div class="kicker l">Kontak</div>
+          <p style="margin-top:6px;color:#cdd9f0">admin@senopatistrategic.com<br>www.senopatistrategic.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
