@@ -34,6 +34,7 @@ cp "$SRC/index.html"   "$WEBROOT/"
 cp "$SRC/style.css"    "$WEBROOT/" 2>/dev/null || true
 cp "$SRC/main.js"      "$WEBROOT/" 2>/dev/null || true
 cp "$SRC/profile.html" "$WEBROOT/" 2>/dev/null || true
+cp "$SRC"/*.pdf        "$WEBROOT/" 2>/dev/null || true
 rm -rf "$WEBROOT/assets"; cp -r "$SRC/assets" "$WEBROOT/"
 chown -R www-data:www-data "$WEBROOT" 2>/dev/null || chown -R root:root "$WEBROOT"
 find "$WEBROOT" -type f -exec chmod 644 {} \;
