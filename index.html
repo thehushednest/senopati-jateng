@@ -541,7 +541,7 @@ const cio=new IntersectionObserver((es)=>es.forEach(e=>{
   const el=e.target,t=+el.dataset.count;let s=null;const d=1400;
   const step=ts=>{if(!s)s=ts;const p=Math.min((ts-s)/d,1);el.textContent=fmt(Math.floor(p*t));if(p<1)requestAnimationFrame(step);else el.textContent=fmt(t)};
   requestAnimationFrame(step);
-},{threshold:.5});
+}),{threshold:.5});
 document.querySelectorAll('[data-count]').forEach(el=>cio.observe(el));
 </script>
 </body>
